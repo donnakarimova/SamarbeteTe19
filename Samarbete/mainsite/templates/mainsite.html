@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mainsite/style.css' %}">
+    {% block extrahead %}{% endblock %}
+    <title>Mainsite</title>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="{% url 'mainsite' %}">Home</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <li><a href="{% url 'shop' %}">Shop</a></li>
+      </ul>
+      {% block content %}
+      <div>
+          <h1>This is the mainsite of the project "Samarbete" by the Class Te19</h1>
+          <p>They are assigned to solve different parts of this website to make it function</p>
+      </div>
+      {% endblock %}
+</body>
+</html>
