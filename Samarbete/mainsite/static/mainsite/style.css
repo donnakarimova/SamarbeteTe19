@@ -1,3 +1,108 @@
 .navbar li {
     display: inline-block;
 }
+*{
+    margin:0;
+    padding:0;
+}
+/* Person 7, Lägg til styling för navbaren så den är lite snyggare här nedan, inspiration kan tas från tidigare uppgifter eller nedan */
+
+
+nav{
+    background-color: black;
+    padding:10px;
+}
+
+ul li{
+    display:inline-block;
+    font-size: 20px;
+    margin-left:5%;
+
+    
+}
+nav a{
+    text-decoration: none;
+    color:white;
+}
+#bannerpic{
+    background-size: contain;
+    width:100%;
+    height:100vh;
+}
+#cooltext{
+    color:#ffec64;
+    background-image: linear-gradient( transparent 300px,rgba(39,39,39,.5) 300px, rgba(39,39,39,.5) 100%);
+    font-size: 32px;
+    padding:0.5% 1%;
+}
+
+.absolute{
+    position: absolute;
+    top:170px;
+    left:200px;
+}
+
+#heading{
+    font-size:46px;
+    width:50%;
+}
+#text{
+    margin-top:2%;
+    font-size: 24px;
+}
+.myButton {
+    margin-top:3%;
+	box-shadow: 0px 1px 2px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Georgia;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffa781;
+}
+
+.about{
+    height:100vh;
+    color:white;
+    background-color: #ffa781;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.Companyinfo{
+    margin-top:6%;
+    margin-bottom: 15%;
+    margin-left: 7%;
+    width:20%;
+    float:left;
+    border: 1px solid black;
+    padding:2%;
+    background-color:#5b0e2d;
+}
+.heading{
+    margin-bottom: 3%;
+    font-size: 32px;
+    color:#ffee66;
+}
+.Contactform{
+   
+    height:100vh;
+    color:white;
+    text-align:center;
+    background-image: linear-gradient(to right, #1D2B64,#F8CDDA);
+}
+.contacttext{
+    padding-top:10%;
+}

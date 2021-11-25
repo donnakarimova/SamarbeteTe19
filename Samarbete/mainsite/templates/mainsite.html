@@ -2,25 +2,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static %}
+    <!-- Person 4, Här behövs fixas så den laddar alla statiska filer-->
+    {%  %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'mainsite/style.css' %}">
+    <!-- Person 7, Här behövs href ändras så den kopplar till statiska filen mainsite/style.css sen stylea i css-filen-->
+    <link rel="stylesheet" href="{% static  %}">
     {% block extrahead %}{% endblock %}
     <title>Mainsite</title>
 </head>
 <body>
     <ul class="navbar">
+        <!-- Person 4, Här behövs ändras så det länkar till shop och register när man klicker på länkarna-->
         <li><a href="{% url 'mainsite' %}">Home</a></li>
-        <li><a href="{% url 'register' %}">Register</a></li>
-        <li><a href="{% url 'shop' %}">Shop</a></li>
+        <li><a href="{% %}">Shop</a></li>
+        <li><a href="{% %}">Register</a></li>
+        
       </ul>
-      {% block content %}
-      <div>
-          <h1>This is the mainsite of the project "Samarbete" by the Class Te19</h1>
-          <p>They are assigned to solve different parts of this website to make it function</p>
-      </div>
+      <!-- Person 4, Här behövs skapas en början på ett block med namnet content-->
+      {%  %}
+      <header>
+        <img id="bannerpic" src="{% static 'mainsite/bannerpic.jpg' %}" alt="banner of computer and coffee">
+        <div class="absolute">
+            <h1 id="heading">This cool webiste has macbooks and coffee</h1>
+            <p id="text">Come join us in this cool company</p>
+            <p id="text">We have the best engineers </p>
+            <!-- Person 7, Här behövs href ändras så den kopplar till shop -->
+            <a href="{% url %}" class="myButton">SHOP NOW</a>
+        </div>
+    </header>
+
+    <!-- Skapa tre kolumner med float och width -->
+    <a id="About"></a>
+    <section class="about">
+        <div class="Companyinfo">
+            <h1 class="heading">Our company</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime nobis quaerat ad ipsa suscipit eos deserunt, repellat repellendus asperiores velit amet culpa provident enim optio. Aut id veniam quia?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime nobis quaerat ad ipsa suscipit eos deserunt, repellat repellendus asperiores velit amet culpa provident enim optio. Aut id veniam quia?</p>
+            <a href="#shop" class="myButton">The company</a>
+        </div>
+        <div class="Companyinfo">
+            <h1 class="heading">Our staff</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime nobis quaerat ad ipsa suscipit eos deserunt, repellat repellendus asperiores velit amet culpa provident enim optio. Aut id veniam quia?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime nobis quaerat ad ipsa suscipit eos deserunt, repellat repellendus asperiores velit amet culpa provident enim optio. Aut id veniam quia?</p>
+            <a href="#shop" class="myButton">See our staff</a>
+        </div>
+        <div class="Companyinfo">
+            <h1 class="heading">Our mission</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime nobis quaerat ad ipsa suscipit eos deserunt, repellat repellendus asperiores velit amet culpa provident enim optio. Aut id veniam quia?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime nobis quaerat ad ipsa suscipit eos deserunt, repellat repellendus asperiores velit amet culpa provident enim optio. Aut id veniam quia?</p>
+            <a href="#shop" class="myButton">See our mission</a>
+        </div>
+    </section>
+    <!--Skapa en contact form här-->
+    <a id="Contact"></a>
+    <section class="Contactform">
+        <div class="contacttext">
+            <h1>Contact form</h1>
+            <br>
+            <p>Contact us here by sending an email</p>
+            <br>
+            <hr>
+            <br>
+         </div>  
+        <form class="form" action="">
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            
+            <br>
+            <br>
+            <label for="message">Message:</label>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            
+        </form>
+    </section>
       {% endblock %}
 </body>
 </html>

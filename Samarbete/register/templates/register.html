@@ -1,12 +1,17 @@
-<!-- Här behövs kod för att hämta navbaren från mainsite-->
-{% extends 'mainsite.html' %}
+<!-- Person 2 Här behövs kod för att extenda navbaren från mainsite-->
+{% %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static%}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Person 2 Nedan behövs href ändras så den hämtar static-filen från rätt ställe-->
+    {% block extrahead %}<link rel="stylesheet" href="{% static '' %}">{% endblock %}
+    <!-- Person 2 Nedan behövs texten ändras till Register-->
+    <title>blabla</title>
 </head>
 <body>
     
@@ -14,7 +19,9 @@
 <h1>Create user</h1>
 <form method="POST" action="">
     {% csrf_token %}
+
     {{form}}
+    
     <input type="submit" value="Registrera dig">
 </form>
 {% endblock %}

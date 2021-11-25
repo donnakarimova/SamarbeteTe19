@@ -37,9 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mainsite',
-    'shop',
-    'register',
+    #Person 1, lägg till apparna mainsite, shop och register nedan
+
 ]
 
 MIDDLEWARE = [

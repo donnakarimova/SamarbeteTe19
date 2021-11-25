@@ -4,6 +4,7 @@ from . import views
 #((Person 1) här behövs läggas till en koppling till view
 
 urlpatterns = [
-    path('', views.mainsite , name="mainsite"),
+    # Person 4, här behövs kopplas till view-funktionen mainsite
+    path('',  , name="mainsite"),
 
 ]

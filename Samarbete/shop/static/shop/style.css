@@ -1,7 +1,10 @@
+
 .card {
+  /* Här behövs läggas till margin mellan card-divsen*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
+    /* Här behövs läggas till float så de hamnar efter varandra*/
+    /* Här behövs ändras width till ca 30% så de kan vara bredvid varandra */
+    max-width: 350px;
     text-align: center;
     font-family: arial;
   }
