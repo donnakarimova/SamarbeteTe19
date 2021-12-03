@@ -5,6 +5,5 @@ from . import views
 
 urlpatterns = [
     # Person 4, här behövs kopplas till view-funktionen mainsite
-    path('',  , name="mainsite"),
-
+    path('',    views.mainsite  , name="mainsite"),
 ]
