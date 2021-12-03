@@ -23,32 +23,32 @@
 #### shop/views.py (Koppla till 'shop.html')
 #### homsite/views.py (Koppla till 'mainsite.html')
 
-### Person 4 (Medel) - (Ditt namn här)
+### Person 4 (Medel) - (Donna)
 #### Ändringar att leta efter:
 #### mainsite/urls.py (Koppla till view)
 #### mainsite/templates/mainsite.html (Lägg till en blockcontent tagg)
 #### mainsite/templates/mainsite.html (Lägg till så den laddar static files)
 #### mainsite/templates/mainsite.html (Lägg till så den länkar till register och shop)
 
-### Person 5 (Medel) - (Ditt namn här)
+### Person 5 (Medel) - (Carlos)
 #### Ändringar att leta efter:
 #### shop/urls.py (Koppla till view)
 #### shop/templates/shop.html (Extenda mainsite.html)
 #### shop/templates/shop.html (Lägg till en blockcontent tagg)
 #### shop/templates/shop.html (Lägg till så den laddar static files)
 
-### Person 6 (Medel) - (Ditt namn här)
+### Person 6 (Medel) - (Leo)
 #### shop/templates/shop.html (Lägg till så den laddar in images rätt)
 #### shop/templates/shop.html (Kopiera card diven och skapa så det finns 6 stycken)
 #### shop/static/shop/style.css (Få de 6 cardsen att vara 3 per rad, på 2 rader, med mellanrum mellan varandra)
 
-### Person 7 (Medel) - (Ditt namn här)
+### Person 7 (Medel) - (Giselle)
 #### Ändringar att leta efter:
 #### mainsite/templates/mainsite.html (Ändra så att den kopplar till style.css)
 #### mainsite/static/mainsite/style.css (Stylea navbaren så att den är lite snyggare)
 #### mainsite/templates/mainsite.html (Ändra så att knappen i <header> kopplar till shop)
 
-### Person 8 (Svår) - (Ditt namn här)
+### Person 8 (Svår) - (Gustaf)
 #### Ändringar att leta efter:
 #### register/views.py (Fixa funktionalitet för att kunna registrera en användare, ta hjälp från föregående uppgift)
 #### Migrera allt när du är klar så att det går att komma till admin-sidan.
