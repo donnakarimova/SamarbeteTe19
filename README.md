@@ -5,19 +5,19 @@
 ### Kommentarer där ni ska ändra finns i respektive filer.
 ### Är ni fler personer än det finns uppgifter kan man samarbeta i par, men båda gör samma uppgift.
 
-### Person 1 (Lätt) - (Ditt namn här)
+### Person 1 (Lätt) - (Linus)
 #### Ändringar att leta efter: 
 #### Samarbete/Samarbete/settings.py  (Lägg till apparna)
 #### Samarbete/Samarbete/urls.py (Koppla till de andra urls)
 
-### Person 2 (Lätt) - (Ditt namn här) 
+### Person 2 (Lätt) - (Alex/Danijel) 
 #### Ändringar att leta efter:
 #### register/urls.py (Koppla till view)
 #### register/templates/register.html (Lägg till att filen extendar 'mainsite.html')
 #### register/templates/register.html (Lägg till så den laddar static files)
 #### register/templates/register.html (Ändra titeln i head till Register)
 
-### Person 3 (Lätt) - (Ditt namn här) 
+### Person 3 (Lätt) - (Tim) 
 #### Ändringar att leta efter:
 #### register/urls.py (Importera views från mappen)
 #### shop/views.py (Koppla till 'shop.html')
